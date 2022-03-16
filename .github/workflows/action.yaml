@@ -55,6 +55,6 @@ jobs:
 #        if: github.ref == 'refs/heads/main' || github.event.inputs.deploy != ''
 #        run: npx serverless@2.53.1 deploy -v
       - name: Destroy
-        if: github.ref == 'refs/heads/master' || github.event.inputs.deploy != ''
+        if: github.ref == 'refs/heads/main' || github.event.inputs.deploy != ''
         run: npx serverless@2.53.1 remove  -v
         
