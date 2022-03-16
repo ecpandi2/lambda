@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-
     paths:
       - 'notes/*'
   workflow_dispatch:
@@ -24,7 +23,7 @@ on:
          default: ''
 defaults:
   run:
-    working_directory: notes
+    working-directory: notes
 jobs:
   CICD:
     runs-on: ubuntu-latest
