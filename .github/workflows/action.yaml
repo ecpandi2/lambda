@@ -39,7 +39,7 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v2
         with:
-          node-version: '14.18.0'
+          node-version: '12.18.0'
       - name: Flush Cache
         if: github.event.inputs.cache != ''
         run: npm cache clean -f
