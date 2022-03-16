@@ -167,7 +167,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes/dev/1643957729062-2022-02-04T06:55:29.062Z/notes.zip"
+          "S3Key": "serverless/notes/dev/1647403333956-2022-03-16T04:02:13.956Z/notes.zip"
         },
         "Handler": "handler.createNotes",
         "Runtime": "nodejs12.x",
@@ -199,7 +199,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/notes/dev/1643957729062-2022-02-04T06:55:29.062Z/notes.zip"
+          "S3Key": "serverless/notes/dev/1647403333956-2022-03-16T04:02:13.956Z/notes.zip"
         },
         "Handler": "handler.getNotesById",
         "Runtime": "nodejs12.x",
@@ -224,24 +224,24 @@
         "GetNoteByIdLogGroup"
       ]
     },
-    "CreateNotesLambdaVersionX3GcSnmrb4PicIQPF2bkgNYXoyiBKc769bwFVaZo": {
+    "CreateNotesLambdaVersiondPeoFUUFmiLdcTaiwmlkKG0a6bISHnSCWOEZmpOoluE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateNotesLambdaFunction"
         },
-        "CodeSha256": "e/U1h8NcPxmh3PPZRg5oiPSNEGzFxZMA9zyz+PJcscs="
+        "CodeSha256": "AJLD3Zno/I4mrzf3As1ydpj8rW3ySNim8hZPCfiYjxE="
       }
     },
-    "GetNoteByIdLambdaVersion8hMbZTEdgZrnf6sSDPFpbAoOW7P32pIGA0HwnGTQD00": {
+    "GetNoteByIdLambdaVersionTZLyZbPpt16d4ybYDVbSoxBBw2R6FGoVOGmrVqW4w": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetNoteByIdLambdaFunction"
         },
-        "CodeSha256": "e/U1h8NcPxmh3PPZRg5oiPSNEGzFxZMA9zyz+PJcscs="
+        "CodeSha256": "AJLD3Zno/I4mrzf3As1ydpj8rW3ySNim8hZPCfiYjxE="
       }
     },
     "ApiGatewayRestApi": {
@@ -375,7 +375,7 @@
         "GetNoteByIdLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1643957727784": {
+    "ApiGatewayDeployment1647403332973": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -475,7 +475,7 @@
     "CreateNotesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateNotesLambdaVersionX3GcSnmrb4PicIQPF2bkgNYXoyiBKc769bwFVaZo"
+        "Ref": "CreateNotesLambdaVersiondPeoFUUFmiLdcTaiwmlkKG0a6bISHnSCWOEZmpOoluE"
       },
       "Export": {
         "Name": "sls-notes-dev-CreateNotesLambdaFunctionQualifiedArn"
@@ -484,7 +484,7 @@
     "GetNoteByIdLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetNoteByIdLambdaVersion8hMbZTEdgZrnf6sSDPFpbAoOW7P32pIGA0HwnGTQD00"
+        "Ref": "GetNoteByIdLambdaVersionTZLyZbPpt16d4ybYDVbSoxBBw2R6FGoVOGmrVqW4w"
       },
       "Export": {
         "Name": "sls-notes-dev-GetNoteByIdLambdaFunctionQualifiedArn"

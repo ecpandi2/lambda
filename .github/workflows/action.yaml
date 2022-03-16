@@ -48,10 +48,12 @@ jobs:
         working-directory: .
       - name: Installing Node Dependencies
         run: npm install
-      - name: Clean
-        if: github.event.inputs.clean != ''
-        run: npx serverless remove -v
       - name: Deploy
-        if: github.ref == 'refs/heads/master' || github.event.inputs.deploy != ''
-        run: npx serverless@2.53.1 deploy -v
+        run: serverless deploy
+#     - name: Clean
+#       if: github.event.inputs.clean != ''
+#       run: npx serverless remove -v
+#     - name: Deploy
+#       if: github.ref == 'refs/heads/master' || github.event.inputs.deploy != ''
+#       run: npx serverless@2.53.1 deploy -v
         
