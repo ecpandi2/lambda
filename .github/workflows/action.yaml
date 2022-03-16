@@ -45,7 +45,7 @@ jobs:
         run: npm cache clean -f
       - name: Installing Root Node Dependencies
         run: npm install
-        working_directory: .
+        working-directory: .
       - name: Installing Node Dependencies
         run: npm install
       - name: Clean
