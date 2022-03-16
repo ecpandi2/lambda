@@ -4,13 +4,13 @@ name: Deploy my Lambda Function
 on: 
   push:
     branches:
-      - master
+      - main
     paths:
       - 'notes/*'
   workflow_dispatch:
     inputs:
       clean:
-        description: Clean serverless deployment
+        description: Clean serverless deployment for nodeJS
         required: false
         default: ''
       cache:
